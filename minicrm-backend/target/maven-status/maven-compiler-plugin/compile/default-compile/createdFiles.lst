@@ -1,0 +1,7 @@
+com\luizbuarque\minicrm\entity\Cliente.class
+com\luizbuarque\minicrm\util\RandomNumber.class
+com\luizbuarque\minicrm\repository\ClienteRepository.class
+com\luizbuarque\minicrm\service\ClienteService.class
+com\luizbuarque\minicrm\controller\ClienteController.class
+com\luizbuarque\minicrm\MinicrmApplication.class
+com\luizbuarque\minicrm\util\RandomNumberIdGenerator.class
