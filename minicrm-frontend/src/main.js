@@ -3,6 +3,7 @@ import App from './App.vue';
 import router from './router';
 import { createVuetify } from 'vuetify';
 import 'vuetify/styles';
+import '../src/assets/main.css';
 
 const vuetify = createVuetify({
   theme: {
@@ -23,12 +24,6 @@ const vuetify = createVuetify({
     }
   }
 });
-
-createApp(App)
-  .use(router)
-  .use(vuetify)
-  .mount('#app');
-
 
 createApp(App)
   .use(router)
