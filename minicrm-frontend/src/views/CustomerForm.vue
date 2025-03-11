@@ -30,18 +30,22 @@
       }
     },
     methods: {
-      handleSubmit() {
-        if (this.isEditing) {
-          api.updateCliente(this.cliente.id, this.cliente).then(() => {
-            this.$router.push('/clientes');
-          });
-        } else {
-          api.addCliente(this.cliente).then(() => {
-            this.$router.push('/clientes');
-          });
-        }
-      }
-    },
+  handleSubmit() {
+    // Set the registration date to the current time in ISO format
+    this.cliente.dataCadastro = new Date().toISOString();
+
+    if (this.cliente.id) {
+      api.updateCliente(this.cliente.id, this.cliente).then(() => {
+        this.$router.push('/clientes');
+      });
+    } else {
+      api.addCliente(this.cliente).then(() => {
+        this.$router.push('/clientes');
+      });
+    }
+  }
+},
+    
     created() {
       const id = this.$route.params.id;
       if (id) {
