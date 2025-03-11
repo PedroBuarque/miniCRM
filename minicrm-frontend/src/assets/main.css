@@ -1,0 +1,13 @@
+.v-btn {
+    border-radius: 20px; /* Make all Vuetify buttons more rounded */
+  }
+  
+  .v-card {
+    border-radius: 16px; /* More rounded cards */
+  }
+  
+  /* Dark background adjustments, if needed */
+  body {
+    background-color: #121212;
+  }
+  
