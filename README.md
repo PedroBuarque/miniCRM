@@ -45,11 +45,11 @@ Visit `http://localhost:5173` in your browser.
 
 | Method | Endpoint              | Description               |
 | ------ | --------------------- | ------------------------- |
-| GET    | `/api/customers`      | Retrieve all customers    |
-| GET    | `/api/customers/{id}` | Retrieve a customer by ID |
-| POST   | `/api/customers`      | Add a new customer        |
-| PUT    | `/api/customers/{id}` | Update a customer         |
-| DELETE | `/api/customers/{id}` | Delete a customer         |
+| GET    | `/api/clientes`      | Retrieve all customers    |
+| GET    | `/api/clientes/{id}` | Retrieve a customer by ID |
+| POST   | `/api/clientess`      | Add a new customer        |
+| PUT    | `/api/clientess/{id}` | Update a customer         |
+| DELETE | `/api/clientes/{id}` | Delete a customer         |
 
 ## Future Improvements 🚀
 
