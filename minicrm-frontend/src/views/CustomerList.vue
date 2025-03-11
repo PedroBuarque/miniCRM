@@ -7,6 +7,7 @@
           :items="clientes"
           :items-per-page="5"
           class="elevation-1"
+          dark
         >
           <!-- eslint-disable-next-line vue/valid-v-slot -->
           <template v-slot:item.actions="{ item }">
@@ -27,10 +28,10 @@
       return {
         clientes: [],
         headers: [
-          { text: 'ID', value: 'id' },
-          { text: 'Name', value: 'nome' },
-          { text: 'Email', value: 'email' },
-          { text: 'Actions', value: 'actions', sortable: false },
+          { title: 'ID', key: 'id' },
+          { title: 'Name', key: 'nome' },
+          { title: 'Email', key: 'email' },
+          { title: 'Actions', key: 'actions', sortable: false },
         ]
       }
     },
