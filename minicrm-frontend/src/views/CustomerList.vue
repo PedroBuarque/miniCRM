@@ -46,6 +46,7 @@ export default {
         { title: "All", value: "all" },
         { title: "CPF", value: "cpf" },
         { title: "Name", value: "nome" },
+        { title: "Data of Birth", value: "dataNascimento"},
         { title: "Mother's Name", value: "nomeMae" },
         { title: "Sexo", value: "sexo" }
       ],
@@ -54,6 +55,7 @@ export default {
         { title: 'ID', value: 'id' },
         { title: 'CPF', value: 'cpf' },
         { title: 'Name', value: 'nome' },
+        { title: 'Data of Birth', value: 'dataNascimento'},
         { title: "Mother's Name", value: 'nomeMae' },
         { title: 'Sexo', value: 'sexo' },
         { title: 'Actions', value: 'actions', sortable: false },
