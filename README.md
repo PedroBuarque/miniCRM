@@ -39,7 +39,7 @@ npm run dev
 
 ### 4. Open the Application
 
-Visit `http://localhost:5173` in your browser.
+Visit `http://localhost:8080` in your browser.
 
 ## API Endpoints 🌐
 
