@@ -7,7 +7,13 @@
       <FormInput label="Name" v-model="cliente.nome" :rules="[rules.required, rules.string]" required />
       <FormInput label="CPF" v-model="cliente.cpf" :rules="[rules.required, rules.cpf]" required />
       <DatePickerInput v-model="cliente.dataNascimento" :rules="[rules.required, rules.validDate]" />
-      <FormInput label="Sexo" v-model="cliente.sexo" :rules="[rules.required, rules.sex]" required />
+      <v-select
+        v-model="cliente.sexo"
+        :items="['Male', 'Female', 'Other']"
+        label="Sexo"
+        :rules="[rules.required, rules.sex]"
+        required
+      ></v-select>
       <FormInput label="Mother's Name" v-model="cliente.nomeMae" :rules="[rules.required, rules.string]" required />
       <v-btn color="primary" type="submit" @click="submitForm" rounded>
         {{ isEditing ? "Update" : "Add" }}
@@ -49,7 +55,6 @@ export default {
           const date = v instanceof Date ? v : new Date(v);
           return !isNaN(date.getTime()) || 'Enter a valid date (YYYY-MM-DD)';
         },
-        sex: v => ['male', 'female'].includes(v) || 'Sexo must be "m" or "f"',
       }
     }
   },
